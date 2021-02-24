@@ -17,7 +17,6 @@ function vim
     nvim $argv
 end
 
-# Weather as greeting
+# Greeting
 function fish_greeting
-    curl v2.wttr.in/Tenerife
 end
