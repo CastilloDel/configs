@@ -1,5 +1,5 @@
-if not set -q TMUX 
-    exec tmux
+if not set -q ZELLLIJ_RUNNING
+    exec zellij
 end
 
 set --export PATH $PATH ~/.cargo/bin
