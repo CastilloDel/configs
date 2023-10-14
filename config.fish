@@ -1,5 +1,5 @@
-if not set -q ZELLLIJ_RUNNING
-    exec zellij
+if not set -q ZELLIJ
+    exec zellij attach -c
 end
 
 set --export PATH $PATH ~/.cargo/bin
