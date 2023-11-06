@@ -1,1 +1,12 @@
+default_shell "fish"
 
+keybinds {
+	shared_except "scroll" "locked" {
+		unbind "Ctrl s" 
+		bind "Alt s" { SwitchToMode "Scroll"; } 
+	}
+	shared_except "session" "locked" {
+		unbind "Ctrl o" 
+		bind "Alt o" { SwitchToMode "Scroll"; } 
+	}
+}
