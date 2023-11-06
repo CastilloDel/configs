@@ -8,6 +8,15 @@ mouse = true
 insert = "bar"
 normal = "block"
 
+[editor.lsp]
+display-messages = true
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "file-name"]
+
 [keys.insert.j]
 k = "normal_mode" # Maps `jk` to exit insert mode
 j = "normal_mode" # Maps `jj` to exit insert mode
@@ -16,5 +25,9 @@ j = "normal_mode" # Maps `jj` to exit insert mode
 j = "normal_mode" # Maps `kj` to exit insert mode
 k = "normal_mode" # Maps `kk` to exit insert mode
 
-[keys.normal.space]
-q = ":w"
+[keys.normal.space.q]
+w = ":w"
+q = ":wq"
+b = ":bc"
+a = ":bca"
+
